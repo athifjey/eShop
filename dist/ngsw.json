@@ -1,0 +1,99 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/index.html",
+        "/main.58f1744f6650d1be599c.js",
+        "/polyfills.a7fcb1113eb946fea93a.js",
+        "/runtime.26209474bfa8dc87a77c.js",
+        "/styles.8767e7ad07adbdfd877a.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/config.json",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/Logo_rnd.png",
+        "/assets/images/cal-left-arrow.svg",
+        "/assets/images/calendar_icon.svg",
+        "/assets/images/calendar_icon1.svg",
+        "/assets/images/facebook.svg",
+        "/assets/images/instagram.svg",
+        "/assets/images/loading_spinner.gif",
+        "/assets/images/logo-nintex-1.svg",
+        "/assets/images/notification.svg",
+        "/assets/images/transfer-1.svg",
+        "/assets/json/all.json",
+        "/assets/json/categories.json",
+        "/assets/locale/messages.xlf",
+        "/loading_spinner.078aa3f09332c2484dbf.gif"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/config.json": "abdb90ad20756a0e1fb37805d8f2e9f838455178",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/Logo_rnd.png": "4e13467094a9a482be847cfbb7b028928afb5167",
+    "/assets/images/cal-left-arrow.svg": "d21b83878546029152717c8b185e3ca10793f192",
+    "/assets/images/calendar_icon.svg": "d340d00a5a4d45685643f40a2665d58cdf73a34c",
+    "/assets/images/calendar_icon1.svg": "9e12954d6f8a80bf99b3319cfbf0265c14462712",
+    "/assets/images/facebook.svg": "d2eda8dd86c17dcbcdd17612b2b6d806520e62c8",
+    "/assets/images/instagram.svg": "9a16bf62c76b4548761571edb41a82c2ea70f882",
+    "/assets/images/loading_spinner.gif": "90da01b48613d216dab6fc90a04a76689ba1767c",
+    "/assets/images/logo-nintex-1.svg": "0654731aa2c590111d37132863be41927fd36320",
+    "/assets/images/notification.svg": "0e191053ce65a28c05a55800c9eb997a56427465",
+    "/assets/images/transfer-1.svg": "d5ca82dfa0b1aa918e1258e53faa8e8c8f8755b2",
+    "/assets/json/all.json": "39fcf6467da21852d2cde7fcd01d4d33029b496e",
+    "/assets/json/categories.json": "3fa5660c2b31f80c3c77e07ce765782bf7ca150c",
+    "/assets/locale/messages.xlf": "aac67db218fba975eb4a0cf4a847dd49dacba9e8",
+    "/index.html": "3267d987d1706db8c2ec186e262e8bcfb1fb8d44",
+    "/loading_spinner.078aa3f09332c2484dbf.gif": "90da01b48613d216dab6fc90a04a76689ba1767c",
+    "/main.58f1744f6650d1be599c.js": "bed51783ce69eb84d1b1051aea7653f1ac515d4f",
+    "/polyfills.a7fcb1113eb946fea93a.js": "48c2fe3811ac3270e5308a4554b2e073d3549f29",
+    "/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/styles.8767e7ad07adbdfd877a.css": "b886ffa5224fa3ba4da58b50215c81af6fdb195c"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+<div>
+  <h2 *ngIf="formType">
+    Edit order
+  </h2>
+  <h2 *ngIf="!formType">
+    Add order
+  </h2>
+</div>
+
+
+
+<div>
+  <form [formGroup]="orderDetailForm">
+    <div fxLayout="column">
+      <div fxLayout="column" fxLayoutGap="12px" fxFlex="100">
+        <!-- Order ID -->
+        <div fxLayout="row" fxFlex="100" fxLayoutGap="4px">
+          <div fxLayout="column" fxFlex="100">
+            <mat-form-field>
+              <input matInput formControlName="orderid" maxlength="8" pattern="[0-9-]+" placeholder="Order ID" class="font-bold"
+                [(ngModel)]="orderID" readonly = "{{formType}}"
+                [ngClass]="{'input-error' : (orderDetailForm.get('orderid').hasError('required') && orderDetailForm.get('orderid').touched) 
+            || (orderDetailForm.get('orderid')?.errors?.minlength && orderDetailForm.get('orderid').touched)
+            || (orderDetailForm.get('orderid')?.hasError('pattern'))}">
+
+              <mat-error *ngIf="orderDetailForm.get('orderid').hasError('required') && orderDetailForm.get('orderid').touched" i18n>
+                Enter Order ID
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('orderid')?.errors?.minlength && orderDetailForm.get('orderid').touched" i18n>
+                Enter minimum 8 characters
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('orderid')?.hasError('pattern')" i18n>
+                Enter valid Order ID in the format x-xxxxxx
+              </mat-error>
+
+            </mat-form-field>
+          </div>
+        </div>
+
+        <!-- Service number -->
+        <div fxLayout="row" fxFlex="100" fxLayoutGap="4px">
+          <div fxLayout="column" fxFlex="100">
+            <mat-form-field>
+              <input matInput formControlName="servicenumber" maxlength="10" pattern="[0-9]+" placeholder="Service Number" class="font-bold"
+                [(ngModel)]="serviceNumber" [ngClass]="{'input-error' : (orderDetailForm.get('servicenumber').hasError('required') && orderDetailForm.get('servicenumber').touched) 
+              || (orderDetailForm.get('servicenumber')?.errors?.minlength && orderDetailForm.get('servicenumber').touched)
+              || (orderDetailForm.get('servicenumber')?.hasError('pattern'))}">
+
+              <mat-error *ngIf="orderDetailForm.get('servicenumber').hasError('required') && orderDetailForm.get('servicenumber').touched"
+                i18n>
+                Enter Service number
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('servicenumber')?.errors?.minlength && orderDetailForm.get('servicenumber').touched"
+                i18n>
+                Enter minimum 10 characters
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('servicenumber')?.hasError('pattern')" i18n>
+                Only numbers allowed!
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+
+        <!-- Segment group -->
+        <div fxLayout="row" fxFlex="100" fxLayoutGap="4px">
+          <div fxLayout="column" fxFlex="100">
+            <mat-form-field>
+              <input matInput formControlName="segmentgroup" maxlength="32" pattern="[0-9a-zA-Z .,]+" placeholder="Segment group" class="font-bold"
+                [(ngModel)]="segmentGroup" [ngClass]="{'input-error' : (orderDetailForm.get('segmentgroup').hasError('required') && orderDetailForm.get('segmentgroup').touched) 
+              || (orderDetailForm.get('segmentgroup')?.errors?.minlength && orderDetailForm.get('segmentgroup').touched)
+              || (orderDetailForm.get('segmentgroup')?.hasError('pattern'))}">
+
+              <mat-error *ngIf="orderDetailForm.get('segmentgroup').hasError('required') && orderDetailForm.get('segmentgroup').touched"
+                i18n>
+                Enter Segment group
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('segmentgroup')?.errors?.minlength && orderDetailForm.get('segmentgroup').touched"
+                i18n>
+                Enter minimum 4 characters
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('segmentgroup')?.hasError('pattern')" i18n>
+                Only alphabets allowed!
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <!-- Product name -->
+        <div fxLayout="row" fxFlex="100" fxLayoutGap="4px">
+          <div fxLayout="column" fxFlex="100">
+            <mat-form-field>
+              <input matInput formControlName="productname" maxlength="32" pattern="[0-9a-zA-Z .,]+" placeholder="Product name" class="font-bold"
+                [(ngModel)]="productName" [ngClass]="{'input-error' : (orderDetailForm.get('productname').hasError('required') && orderDetailForm.get('productname').touched) 
+              || (orderDetailForm.get('productname')?.errors?.minlength && orderDetailForm.get('productname').touched)
+              || (orderDetailForm.get('productname')?.hasError('pattern'))}">
+
+              <mat-error *ngIf="orderDetailForm.get('productname').hasError('required') && orderDetailForm.get('productname').touched"
+                i18n>
+                Enter product name
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('productname')?.errors?.minlength && orderDetailForm.get('productname').touched" i18n>
+                Enter minimum 4 characters
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('productname')?.hasError('pattern')" i18n>
+                Only alphabets allowed!
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+
+        <!-- Remark -->
+        <div fxLayout="row" fxFlex="100" fxLayoutGap="4px">
+          <div fxLayout="column" fxFlex="100">
+            <mat-form-field>
+              <textarea matInput formControlName="remark" maxlength="100" placeholder="Remarks" class="font-bold"
+                [(ngModel)]="remark" [ngClass]="{'input-error' : (orderDetailForm.get('remark').hasError('required') && orderDetailForm.get('remark').touched) 
+              || (orderDetailForm.get('remark')?.errors?.minlength && orderDetailForm.get('remark').touched)
+              || (orderDetailForm.get('remark')?.hasError('pattern'))}"></textarea>
+
+              <mat-error *ngIf="orderDetailForm.get('remark').hasError('required') && orderDetailForm.get('remark').touched" i18n>
+                Enter product name
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('remark')?.errors?.minlength && orderDetailForm.get('remark').touched" i18n>
+                Enter minimum 4 characters
+              </mat-error>
+              <mat-error *ngIf="orderDetailForm.get('remark')?.hasError('pattern')" i18n>
+                Only alphabets allowed!
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+
+        <!-- Order status radio -->
+        <div fxLayout="row" fxFlex="100" fxLayoutGap="4px">
+          <div fxLayout="column" fxFlex="100">
+            <div class="custom-form-label">Order status</div>
+            <mat-radio-group formControlName="orderstatus" [(ngModel)]="orderStatus"
+            fxFlex="100" fxLayoutGap="10px" aria-label="Order status">
+              <mat-radio-button value="Processing">Processing</mat-radio-button>
+              <mat-radio-button value="Completed">Completed</mat-radio-button>
+            </mat-radio-group>
+            <mat-error>
+                <span *ngIf="!orderDetailForm.get('orderstatus').valid && orderDetailForm.get('orderstatus').touched">Please select a valid option!</span>
+              </mat-error>
+          </div>
+        </div>
+
+
+        <!--State combo box-->
+        <div fxLayout="row" fxFlex="100" fxLayoutGap="4px">
+          <div fxLayout="column" fxFlex="100">
+            <mat-form-field>
+              <mat-select formControlName="state" placeholder="State*" [(value)]="stateData">
+                <mat-option>-- Select Any --</mat-option>
+                <mat-option *ngFor="let state of stateList" [value]="state.name">{{state.name}}</mat-option>
+              </mat-select>
+              <mat-error>
+                <span *ngIf="!orderDetailForm.get('state').valid && orderDetailForm.get('state').touched">Please select a valid option!!!</span>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action buttons -->
+      <div fxLayout="row" fxFlex="100" fxLayoutGap="8px">
+        <button *ngIf="formType" mat-raised-button type="submit" [disabled]="orderDetailForm.invalid" 
+        (click) = "onSubmit(orderDetailForm, 'edit')" class="button--search" i18n>
+          SAVE
+        </button>
+
+        <button *ngIf="formType" mat-raised-button 
+        (click) = "onSubmit(orderDetailForm, 'delete')" class="button--reset" i18n>
+          DELETE
+        </button>
+
+        <button *ngIf="!formType" mat-raised-button type="submit" [disabled]="orderDetailForm.invalid" 
+        (click) = "onSubmit(orderDetailForm, 'add')" class="button--search" i18n>
+            ADD
+          </button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ee0b3311ab88bb8434e2b4e2514b9e08149e31a7" datatype="html">
+        <source>DEPARTURE FROM</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d55734015d21644b2bc8862ba451f4efe6dbd6b8" datatype="html">
+        <source>
+          Enter departure city
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1365f113637d7bf41cef4f5e9c7f35d34bf66302" datatype="html">
+        <source>
+          Enter minimum 3 characters
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f80301cc8eb209edabc69c3a7d000103b41d14ae" datatype="html">
+        <source>
+          Special characters are not allowed!
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3da26c926f1c1b5f790e1fb32766841a43b6602f" datatype="html">
+        <source>ARRIVAL AT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="623c02cba87f78901263e31eee7934159af21986" datatype="html">
+        <source>
+          Enter arrival destination
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2e08d5348cfcd31d3d4b4922fee4679abd58d84f" datatype="html">
+        <source>DEPARTURE DATE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="663d65a14e0c06b24fa35795cadb08c910478d58" datatype="html">
+        <source>
+          Enter departure date
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb2fb202e8806c495a0001ff6bac23db1691696b" datatype="html">
+        <source>RETURN DATE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c85c4221d8844ea9a3ae45d37731f72dd2550b17" datatype="html">
+        <source>
+          Enter arrival date
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9f52acae4614107148315ea4ba4f3d4140cf50cb" datatype="html">
+        <source>
+          Search
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="265ee68edfe57e510270da31ec99f67d94346009" datatype="html">
+        <source>
+          Reset
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-form/search-form.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="230a78c1e15636a0730461c749dfb220f380f164" datatype="html">
+        <source>Filter:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-results/search-results.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d6a144e160c413b6e80095b7105dd1cfd8a87285" datatype="html">
+        <source>
+      Showing <x id="INTERPOLATION" equiv-text="{{searchResult.length}}"/> flights for the above search.
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-results/search-results.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="150bee8f1b636b16bc159d80a6ac9e4efa21c336" datatype="html">
+        <source>BOOK</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/search-results/search-results.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

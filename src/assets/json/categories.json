@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "すべて",
+      "engname": "all"
+    },
+    {
+      "id": "2",
+      "name": "レディース",
+      "engname": "Women"
+
+    },
+    {
+      "id": "3",
+      "name": "ベビー・キッズ",
+      "engname": "Baby kids"
+    },
+    {
+      "id": "4",
+      "name": "エンタメ",
+      "engname": "Entertainment"
+    },
+    {
+      "id": "5",
+      "name": "メンズ",
+      "engname": "Men"
+    }
+  ]
+}

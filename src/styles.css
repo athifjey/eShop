@@ -1,0 +1,268 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* Global Styles */
+
+* {
+  font-family:sans-serif;
+  color: #252525;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet+* {
+  padding: 0 16px;
+}
+
+router-outlet+* {
+  padding: 0 8px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Hyperlink */
+
+a {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Input */
+
+input {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #BDBDBD;
+  width: 100%;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* Image background */
+
+.loadingImg {
+  background-image: url('assets/images/loading_spinner.gif') !important;
+  background: transparent center no-repeat;
+  background-size: auto;
+}
+
+/* Button */
+
+.button, button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #2fd219;
+  color: white;
+  border: none;
+  width: 100%;
+  outline: none !important;
+}
+
+.button:hover, button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled, button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* generic */
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute!important;
+}
+
+.font-bold {
+  font-weight: bold !important;
+}
+
+.p-t-8 {
+  padding-top: 8px;
+}
+
+.p-l-8 {
+  padding-left: 8px;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+input {
+  outline: none;
+}
+
+.input--uppercase {
+  text-transform: uppercase;
+}
+
+mat-card {
+  border-radius: 6px !important;
+  -webkit-box-shadow: 0px 0px 22px 0px rgba(198, 198, 198, 0.7) !important;
+  -moz-box-shadow: 0px 0px 22px 0px rgba(198, 198, 198, 0.7) !important;
+  box-shadow: 0px 0px 22px 0px rgba(198, 198, 198, 0.7) !important;
+  margin: auto;
+}
+
+mat-error {
+  font-size: 10px;
+  color: #ffd740 !important;
+}
+
+.cdk-live-announcer-element {
+  display: none !important;
+}
+
+.mat-button-wrapper {
+  color: black;
+  font-weight: bold;
+  width: 100%;
+}
+
+.mat-card-content {
+  flex: 1 1 100%;
+}
+
+.mat-icon-button {
+  background-color: white!important;
+  width: 16px !important;
+  height: 16px !important;
+  line-height: 16px !important;
+}
+
+.mat-radio-inner-circle {
+  background-color: #666666 !important;
+}
+
+.mat-radio-outer-circle {
+  border-color: #666666 !important;
+  border-radius: 50% !important;
+}
+
+.mat-radio-label-content {
+  white-space: normal !important;
+}
+
+.mat-radio-input {
+  display: none;
+}
+
+/* Header */
+
+.header--container {
+  min-width: 284px;
+  width: 100%;
+  height: 100%;
+  padding: 8px 0px;
+  z-index: 20;
+  background-image: linear-gradient(to right, #fff,	#d2b6ac);
+}
+
+.header--login {
+  font-size: 14px;
+}
+
+.img--nintex-logo {
+  height: 60px;
+}
+
+.img--nintex-logo-1 {
+  height: 48px;
+}
+
+.img--header-logo {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.menu--title {
+  padding: 16px 0px 0px 8px;
+  font-size: 14px;
+}
+
+/* search flight styles */
+
+.dashboard-container {
+  margin-top: 16px;
+  background: white;
+}
+
+.button--search {
+  background: #ebf54d;
+  color: white !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+  justify-content: center;
+  margin-top: 18px !important;
+  height: 34px !important;
+}
+
+.button--reset .mat-button-wrapper {
+  color: white !important;
+}
+
+.button--reset {
+  background: #f10b0b;
+  color: white !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+  justify-content: center;
+  margin-top: 18px !important;
+  height: 34px !important;
+}
+
+.form--label {
+  padding-left: 4px;
+  color: white;
+  font-weight: bold;
+  line-height: 14px;
+}
+
+.input-error {
+  border: 2px blue solid;
+}
+

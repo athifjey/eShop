@@ -1,0 +1,20 @@
+<div fxLayout="row" fxLayoutGap="16px">
+
+  <div fxLayout="column" fxFlex="100">
+    <div>
+      <mat-card class="dashboard-container">
+        <div class="p-b-20">
+          <h1>
+            Orders
+          </h1>
+        </div>
+        <app-order-table></app-order-table>
+        <div fxLayoutAlign="end center" >
+          <div class="add-new-button-class">
+            <button mat-raised-button class="button--search" i18n (click)="addNewOrder()">ADD NEW ORDER</button>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

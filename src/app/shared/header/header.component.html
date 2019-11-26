@@ -1,0 +1,33 @@
+<div fxLayoutAlign="center center">
+  <div class="header--container">
+    <mat-toolbar class="header--container" ngClass.gt-sm="p-lr-40" fxLayout="row" fxLayoutAlign="space-between center">
+      <div fxLayout="row" fxLayoutAlign="space-between center" class="header--container">
+        <div fxFlex="60" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+
+          <!-- nintex logo -->
+          <div fxFlex="42" fxFlex.xs="15">
+            <img fxHide.xs="true" src="assets/images/Logo_rnd.png" class="img--nintex-logo">
+            <img fxHide.gt-xs="true" src="assets/images/Logo_rnd.png" class="img--nintex-logo-1">
+          </div>
+
+        </div>
+
+
+        <div fxFlex="40" fxFlex.xs="100" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="8px">
+          <div fxHide.lt-md="true" class="header--login font-bold" (click)="loginError()">
+            Welcome, User!
+          </div>
+          <div fxHide.lt-md="true">
+            <img src="assets/images/notification.svg" class="img--header-logo" (click)="iconClick('notif')">
+          </div>
+          <div fxHide.lt-md="true">
+            <img src="assets/images/facebook.svg" class="img--header-logo" (click)="iconClick('fb')">
+          </div>
+          <div fxHide.lt-md="true">
+            <img src="assets/images/instagram.svg" class="img--header-logo" (click)="iconClick('insta')">
+          </div>
+        </div>
+      </div>
+    </mat-toolbar>
+  </div>
+</div>

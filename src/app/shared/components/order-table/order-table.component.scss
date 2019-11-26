@@ -1,0 +1,42 @@
+table.mat-table {
+    width: 100% !important;
+}
+
+.mat-table .mat-header-cell {
+    min-height: 30px;
+    padding: 0px 5px; //text-align: center;
+}
+
+.mat-table .mat-row .mat-cell {
+    // min-height: 15px;
+    padding: 16px 5px; //text-align: left;
+}
+
+.table-orderid-link {
+    cursor: pointer;
+    color: blue;
+}
+
+@media(max-width: 600px) {
+    td.mat-cell {
+        word-break: break-word;
+        font-size: 10px !important;
+    }
+
+    .mat-header-row {
+        font-size: 12px
+    }
+
+    .mat-sort-header-button {
+        font-size: 12px !important;
+    }
+
+    .mat-row {
+        flex-direction: column;
+        align-items: start;
+    }
+    .hide-column{
+        display: none;
+    }
+}
+
