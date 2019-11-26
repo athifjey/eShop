@@ -1,59 +1,31 @@
-# BoomCar - Node.js application
+# eShop - Node.js application
 
-This is a Node.js application that exposes endpoints for a Rental Car booking application.
+This is an Angular - Node.js - MySQL application that handles orders.
 
-This model application is built with Node.js + Express.js, Sequelize and MySQL, and the application is CORS enabled. The services are built with Microservices approach. 
-
-The following operations can be performed with the endpoints exposed by BoomCar application
-
-### New features added
-
-* Application implemented with ORM - Sequelize and MySQL is used
-* Filter feature for availability dates implemented
+This model application is built with Angular 7, Node.js + Express.js, Sequelize and MySQL, and the application is CORS enabled. The services are built with Microservices approach. 
 
 ### Features:
-1.	List all users and their cars with available date and time
-2.	Lists the detail of each User
-3.	Allows to add user and car along with availability
-#### 4.  Filter cars based on their available date 
-5.	Lists all cars and their availability
-6.	Lists the availability details of a particular car
-7.	Allows to add/edit/update cars availability
+1.	Lists all the orders from DB
+2.	Lists the details of each order when clicked on the order ID.
+3.	The orders can be edited and saved, the Order ID is not editable in Edit mode.
+4.  The order can be deleted by entering the edit mode
+5.  New order can be added by clicking 'Add new order' button
 
-The following are the end points and they are also available as ARC endpoint JSON file in the following location (endpoints/arc-data-export-boomcar-v2.json)
 
 ### Available endpoints:
-1.	/cars – GET method - List all users and their cars with availability date and time
-2.	/cars/:id – GET – Lists the details of user bearing the ‘id’
-3.	/cars – POST – To add user and car data & timings
+1.	/api/orders – GET method - List all orders
+2.	/api/orders/:id – PUT – To save/update the details of order bearing the ‘id’
+3.	/api/orders – POST – To add a new order
 a.	Request Body:
-`{
-    "id": 1001,
-    "custName": "Barrack Obama",
-    "mobile": "601234567890",
-    "carId": 99880,
-    "carName": "BMW E series",
-    "carBrand": "BMW",
-    "carModel": "E250",
-    "carMakeYear": 2018,
-    "avlDateFrom": "2019-09-09 00:00:00+0530Z",
-    "avlTimeFrom": "13:00",
-    "avlDateTo": "2019-09-09 00:00:00+0530Z",
-    "avlTimeTo": "13:00"
-}`
-4.	/timings – GET – Lists all cars filtered with the available date and time
-    Headers:
-    `avlDateFrom: 2018-11-08 00:00:00+0530Z, avlDateTo: 2019-11-08 00:00:00+0530Z`
-5.	/timings/:carId – GET – Lists the details of car with ‘carId’
-6.	/timings/:carId – PUT – To add/update availability date and time
-a.	Request body:
-`{
-  "avlDateFrom": "2019-12-08 00:00:00+0530Z",
-  "avlTimeFrom": "15:00",
-  "avlDateTo": "2019-12-10 00:00:00+0530Z",
-  "avlTimeTo": "11:00"
-}`
+`{"orderid": 191919191,
+"servicenumber": 2100003647,
+"segmentgroup": "Wellington",
+"productname": "High speed Internet in the world is not enough",
+"orderstatus": "Processing",
+"remark": "This is a remark",
+"state": "Kuala Lumpur"}`
 
+6.	/api/orders/:id – DELETE – To delete a specific order with 'id'
 
 ### Installation:
 
@@ -61,7 +33,7 @@ The application can be installed downloading this code to your system, navigate 
 
 #### `yarn install` or `npm install`
 
-The above command installs all dependencies required to run the node.js application. 
+The above command installs all dependencies required to run the Angular7 / node.js application. 
 
 The application needs a MySQL database to run. Create a database and update the DB details in the following location.
 
@@ -73,15 +45,9 @@ Enter required DB connection details in the above file and run the following scr
 
 To start the app, run the following command
 
-#### `npm start`
+#### `npm run build`
 
-Once you could find the message ‘Server started successfully’ message in the console, open ARC from Chrome apps. The application is accessible at `http://localhost:3100/`
-
-Follow the link to install ARC to chrome extensions.
-
-https://webkul.com/blog/advanced-rest-clientapi-testing-tool/
-
-Once ARC opens, import the JSON file from endpoints folder in root (endpoints/arc-data-export-boomcar.json) to access the endpoints described above.
+Once you could find the message ‘Server started successfully’ message in the console, the application is accessible at `http://localhost:4200/`
 
 #### Author:
 Athif J --- athifbijli@gmail.com <br />
