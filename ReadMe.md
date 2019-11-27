@@ -25,7 +25,7 @@ a.	Request Body:
 "remark": "This is a remark",
 "state": "Kuala Lumpur"}`
 
-6.	/api/orders/:id – DELETE – To delete a specific order with 'id'
+4.	/api/orders/:id – DELETE – To delete a specific order with 'id'
 
 ### Installation:
 
@@ -47,7 +47,19 @@ To start the app, run the following command
 
 #### `npm run build`
 
-Once you could find the message ‘Server started successfully’ message in the console, the application is accessible at `http://localhost:4200/`
+Once you could find the message ‘Server started successfully’ message in the console, the application is accessible at `http://localhost:4200/dashboard`
+
+
+## Progressive web app
+
+The application is developed as PWA. The same can be checked in the latest chrome browser.
+
+To check, press f12, move to Audit tab and start an audit. 
+
+The resulting stats will explain the implementation of PWA in this application.
+
+PWA caches the application data, that makes application load faster from the second time. 
+The application can be accessed offline with minimal app data. - this can be checked by stopping the app from execution , Ctrl + c and reload the app.
 
 #### Author:
 Athif J --- athifbijli@gmail.com <br />
